@@ -17,12 +17,19 @@ fg_col = "#0b2545"
 btn_col = "#eef4ed"
 font_name = "Yu Gothic Ui Semilight"
 
-# Importing files here for no error
-# import start as st
-# st.window = window
 
-import sessions as sp
-sp.window = window
+def change_screen(frame1, frame2):
+    frame1.pack_forget()
+    frame2.pack(expand=True, fill="both")
+
+
+# Importing files here for no error
+import start as st
+
+
+
+
+
 
 
 
